@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Inicial</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <h1>Bem vindo ao site</h1>
+    <hr>
+    <h3>Faça sua pergunta</h3>
+
+    <% if(flag){%>
+        <%= nome%>
+        <%= lang%>
+        <%= empresa%>
+        <%= inscritos%>
+    <%}%>
+
+    <% produtos.forEach(function(produto){ %>
+        <hr>
+        <h3><%= produto.nome %></h3>
+        <h4><%= produto.preco %></h4>
+    <% }) %>
+
+    
+
+</body>
+</html>
